@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movie Manager</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/gest.js"></script>
+</head>
+<body> 
+	<div class="container">
+		<div class="forms-container">
+
+
+			<form class="generalForm" onsubmit="return formSubmitted();">
+
+				<form class="searchForm">
+					<h2 class="toWatch">Movies to watch</h2> 
+					<div class="input-search">
+						<i class="fas fa-user"></i>
+						<input type="text" name="search" id="searchBar" placeholder="Search what you looking for..." onkeyup="searching()">
+					</div>
+				</form>
+
+				<h2 class="info">Movie Information</h2>
+				<form class="addMovieForm" onsubmit="return formSubmitted();">
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="link" id="picture" placeholder="link picture movie" required>
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" id="name" placeholder="name" required >
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="name" id="available" placeholder="Available on" required>
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" id="actor" placeholder="Main actors" required>
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Director" id="director">
+					</div>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="number" id="year" placeholder="YYYY" min="1600" max="2200">
+					</div>
+					<br>
+					<button class="btn">Add New Movie</button>
+
+				</form>
+			</form>
+
+			<div id="contacts"></div>
+			<p><button class="empty" onclick="emptyList();">Empty</button> 
+				<button class="load" onclick="loadList();">Load</button>
+				<button class="save" onclick="cm.save();">Save</button> 
+			</p>
+			<p>
+				<button class="btnPage" id="prev" onclick="prevPage();">&#x3c;</button>
+				<button class="btnPage" id="next" onclick="nextPage();">&#x3e;</button>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
