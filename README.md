@@ -12,5 +12,6 @@
 - Adding a search form for searching a film/serie by name: reducing the table as we type!
 - Improving the CSS to make it appear better.
 - Adding the header and making the table sortable when clicking on the header of one column.
-- Adding buttons for pagination: only display films/series 5 by 5, use Next page/Previous page for navigating. disabling the Previous page button on the first page, the Next Page button on the last page.
+- Adding scrollbar for the table.
+- Adding buttons for pagination: display films/series 5 by 5, use Next page/Previous page for navigating. the Previous page button on the first page disabled automatically, and the Next Page button on the last page.
 - etc..
